@@ -1,0 +1,41 @@
+{
+  "name": "@reneturcios/spinspec",
+  "version": "0.1.0",
+  "description": "Centrifuge specs, stock and RCF sizing for remanufactured Alfa Laval centrifuges, via a forwarding client to the Dolphin Centrifuge MCP service.",
+  "license": "MIT",
+  "mcpName": "io.github.CloudCorpRecords/spinspec",
+  "type": "module",
+  "private": false,
+  "bin": {
+    "spinspec": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "server.json"
+  ],
+  "homepage": "https://github.com/CloudCorpRecords/spinspec#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CloudCorpRecords/spinspec.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsx --test test/*.test.ts",
+    "dev": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1",
+    "zod": "^4"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4",
+    "typescript": "^5"
+  }
+}
